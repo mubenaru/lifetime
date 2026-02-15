@@ -166,6 +166,11 @@ input{
 .unit{font-size:0.8rem;color:#aaa;}
 .timer-main{font-size:1.1rem;}
 </style>
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+</script>
 </head>
 
 <body>
@@ -270,4 +275,5 @@ function update(){
 </script>
 
 </body>
+
 </html>
